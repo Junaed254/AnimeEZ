@@ -16,7 +16,7 @@ let secs = config.time_update + "000";
   global.secs = secs
 let port = await checkport(config.port);
 let api_url = await apifunction(config.api_url, secs);
-  global.api_url = api_url;
+  global.api_url = https://animeez-api--junaed254.repl.co/;
 ;
     if(!secs.includes("disable")) {
   setInterval(async() => {
