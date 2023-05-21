@@ -21,17 +21,17 @@ let api_url = await apifunction(config.api_url, secs);
     if(!secs.includes("disable")) {
   setInterval(async() => {
     try {
-   let res = await axios.get(api_url +"api/recentlyadded/1");
+   let res = await axios.get(api_url +"api/recent-release/");
 
   db.set(`recentlyadded`, res.data.results);
-  let resx = await axios.get(api_url +"api/popular/1");
+  let resx = await axios.get(api_url +"api/popular/");
 
   db.set(`popular`, resx.data.results);
      } catch(e) {
-         let res = await axios.get(api_url +"api/recentlyadded/1");
+         let res = await axios.get(api_url +"api//recent-release/");
 
   db.set(`recentlyadded`, res.data.results);
-  let resx = await axios.get(api_url +"api/popular/1");
+  let resx = await axios.get(api_url +"api/popular/");
 
   db.set(`popular`, resx.data.results);
      return console.log(e);
