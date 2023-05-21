@@ -1,3 +1,5 @@
+const app = require("./app.js");
+app();
 const express = require("express");
 const app = express()
 const path = require("path");
