@@ -1,5 +1,5 @@
 module.exports = {
-  "api_url": "https://animeez-api--junaed254.repl.co/",
+  "api_url": "https://gogoapiv1.onrender.com/",
   // Enter your api host's url or if hosting locally/on your own computer use https://localhost:6969
   
   "time_update": "200",
