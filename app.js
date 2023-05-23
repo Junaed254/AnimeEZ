@@ -1,5 +1,5 @@
-const appModule = require("./app.js");
-const app = appModule(); // Invoke the function returned by the require statement
+// const appModule = require("./app.js");
+// const app = appModule(); // Invoke the function returned by the require statement
 
 const express = require("express");
 const app = express();
