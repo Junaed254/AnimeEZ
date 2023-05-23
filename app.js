@@ -1,5 +1,4 @@
-// const appModule = require("./app.js");
-// const app = appModule(); // Invoke the function returned by the require statement
+
 
 const express = require("express");
 const app = express();
@@ -9,6 +8,10 @@ const db = require("quick.db");
 const config = require("./config.js");
 let apifunction = require("./functions/check_api_url.js");
 let checkport = require("./functions/check_port.js");
+
+
+const appModule = require("./app.js");
+const faltu = appModule(); // Invoke the function returned by the require statement
 
 module.exports = async function () {
   app.set("views", path.join(__dirname, "views"));
